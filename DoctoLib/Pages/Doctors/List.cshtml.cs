@@ -16,6 +16,8 @@ namespace DoctoLib.Pages.Doctors
 		private readonly IDoctorData doctorData;
 
 		public IEnumerable<Doctor> Doctors { get; set; }
+		[BindProperty(SupportsGet = true)]
+		public string SearchTerm { get; set; }
 
 		public string Message { get; set; }
 		public ListModel(IConfiguration config, IDoctorData doctorData)
@@ -26,7 +28,7 @@ namespace DoctoLib.Pages.Doctors
         public void OnGet()
         {
 			Message = config["Message"];
-			Doctors = doctorData.GetAll();
+			Doctors = doctorData.GetDoctorsByName(SearchTerm);
         }
     }
 }

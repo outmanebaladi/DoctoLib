@@ -1,7 +1,6 @@
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Core\bin\Debug\netcoreapp3.0\DoctoLib.Core.deps.json
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Core\bin\Debug\netcoreapp3.0\DoctoLib.Core.dll
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Core\bin\Debug\netcoreapp3.0\DoctoLib.Core.pdb
-C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Core\obj\Debug\netcoreapp3.0\DoctoLib.Core.csprojAssemblyReference.cache
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Core\obj\Debug\netcoreapp3.0\DoctoLib.Core.AssemblyInfoInputs.cache
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Core\obj\Debug\netcoreapp3.0\DoctoLib.Core.AssemblyInfo.cs
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Core\obj\Debug\netcoreapp3.0\DoctoLib.Core.dll

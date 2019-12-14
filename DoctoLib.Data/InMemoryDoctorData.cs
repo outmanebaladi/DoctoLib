@@ -1,6 +1,7 @@
 ﻿using DoctoLib.Core;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace DoctoLib.Data
@@ -17,9 +18,11 @@ namespace DoctoLib.Data
 				new Doctor() { Name = "Outmane Baladi", Location = "Marcher central, Casablanca", Type = DoctorType.Cardiologists}
 			};
 		}
-		public IEnumerable<Doctor> GetAll()
+		public IEnumerable<Doctor> GetDoctorsByName(string name)
 		{
-			return doctors;
+			return from d in doctors
+				   where string.IsNullOrEmpty(name) || d.Name.StartsWith(name)
+				   select d;
 		}
 	}
 }

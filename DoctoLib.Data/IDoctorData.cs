@@ -7,6 +7,6 @@ namespace DoctoLib.Data
 {
 	public interface IDoctorData
 	{
-		IEnumerable<Doctor> GetAll();
+		IEnumerable<Doctor> GetDoctorsByName(string name);
 	}
 }
