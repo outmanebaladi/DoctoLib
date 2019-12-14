@@ -1,0 +1,18 @@
+﻿@page "{doctorId:int}"
+@model DoctoLib.Pages.Doctors.DetailModel
+@{
+	ViewData["Title"] = "Detail";
+}
+
+<h1>@Model.Doctor.Name</h1>
+<div>
+	Id: @Model.Doctor.Id
+</div>
+<div>
+	Location: @Model.Doctor.Location
+</div>
+<div>
+	Type: @Model.Doctor.Type
+</div>
+
+<a asp-page="./List" class="btn btn-primary">All Restaurants</a>

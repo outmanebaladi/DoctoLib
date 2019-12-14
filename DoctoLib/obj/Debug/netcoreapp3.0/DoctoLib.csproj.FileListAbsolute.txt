@@ -129,3 +129,5 @@ C:\Users\outmane\source\repos\DoctoLib\DoctoLib\bin\Debug\netcoreapp3.0\DoctoLib
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib\bin\Debug\netcoreapp3.0\DoctoLib.Data.dll
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib\bin\Debug\netcoreapp3.0\DoctoLib.Core.pdb
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib\bin\Debug\netcoreapp3.0\DoctoLib.Data.pdb
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib\obj\Debug\netcoreapp3.0\Razor\Pages\Doctors\Detail.cshtml.g.cs
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib\obj\Debug\netcoreapp3.0\Razor\Pages\Doctors\NotFound.cshtml.g.cs

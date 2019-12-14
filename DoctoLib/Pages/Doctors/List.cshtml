@@ -25,6 +25,11 @@
 			<td>@doctor.Name</td>
 			<td>@doctor.Location</td>
 			<td>@doctor.Type</td>
+			<td>
+				<a class="btn btn-lg" asp-page="./Detail" asp-route-doctorId="@doctor.Id">
+					<i class="fa fa-search-plus"></i>
+				</a>
+			</td>
 		</tr>
 	}
 </table>
