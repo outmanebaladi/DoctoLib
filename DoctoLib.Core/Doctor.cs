@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DoctoLib.Core
 {
-	class Doctor
+	public class Doctor
 	{
 		public string Name { get; set; }
 		public string Location { get; set; }

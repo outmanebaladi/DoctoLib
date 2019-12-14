@@ -1,6 +1,6 @@
 ﻿namespace DoctoLib.Core
 {
-	enum DoctorType
+	public enum DoctorType
 	{
 		Cardiologists,
 		Dermatologists,
