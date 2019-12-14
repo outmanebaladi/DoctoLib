@@ -21,16 +21,22 @@
 <table class="table">
 	@foreach(var doctor in Model.Doctors)
 	{
-		<tr>
-			<td>@doctor.Name</td>
-			<td>@doctor.Location</td>
-			<td>@doctor.Type</td>
-			<td>
-				<a class="btn btn-lg" asp-page="./Detail" asp-route-doctorId="@doctor.Id">
-					<i class="fa fa-search-plus"></i>
-				</a>
-			</td>
-		</tr>
+	<tr>
+		<td>@doctor.Name</td>
+		<td>@doctor.Location</td>
+		<td>@doctor.Type</td>
+		<td>
+			<a class="btn btn-lg" asp-page="./Detail" asp-route-doctorId="@doctor.Id">
+				<i class="fa fa-search-plus"></i>
+			</a>
+		</td>
+		<td>
+			<a class="btn btn-lg" asp-page="./Edit" asp-route-doctorId="@doctor.Id">
+				<i class="fa fa-pencil"></i>
+			</a>
+		</td>
+
+	</tr>
 	}
 </table>
 

@@ -9,5 +9,7 @@ namespace DoctoLib.Data
 	{
 		IEnumerable<Doctor> GetDoctorsByName(string name);
 		Doctor GetById(int id);
+		Doctor Update(Doctor updatedDoctor);
+		int Commit();
 	}
 }

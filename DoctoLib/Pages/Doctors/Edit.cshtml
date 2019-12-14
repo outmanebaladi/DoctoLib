@@ -1,0 +1,26 @@
+﻿@page "{doctorId:int}"
+@model DoctoLib.Pages.Doctors.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+<form method="post">
+	<input type="hidden" asp-for="Doctor.Id" />
+	<div class="form-group">
+		<label asp-for="Doctor.Name"></label>
+		<input asp-for="Doctor.Name" class="form-control" />
+		<span class="text-danger" asp-validation-for="Doctor.Name"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Doctor.Location"></label>
+		<input asp-for="Doctor.Location" class="form-control" />
+		<span class="text-danger" asp-validation-for="Doctor.Location"></span>
+	</div>
+	<div class="form-group">
+		<label asp-for="Doctor.Type"></label>
+		<select asp-for="Doctor.Type" asp-items="Model.Types" class="form-control"></select>
+		<span class="text-danger" asp-validation-for="Doctor.Type"></span>
+	</div>
+	<button type="submit" class="btn btn-primary">Save</button>
+</form>

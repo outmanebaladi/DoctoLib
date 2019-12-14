@@ -29,5 +29,22 @@ namespace DoctoLib.Data
 		{
 			return doctors.SingleOrDefault(d => d.Id == id);
 		}
+
+		public Doctor Update(Doctor updatedDoctor)
+		{
+			var doctor = doctors.SingleOrDefault(d => d.Id == updatedDoctor.Id);
+			if(doctor != null)
+			{
+				doctor.Name = updatedDoctor.Name;
+				doctor.Location = updatedDoctor.Location;
+				doctor.Type = updatedDoctor.Type;
+			}
+			return doctor;
+		}
+
+		public int Commit()
+		{
+			return 0;
+		}
 	}
 }
