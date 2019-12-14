@@ -2496,6 +2496,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "DoctoLib.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/DoctoLib.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DoctoLib.Core.dll": {}
+        }
+      },
+      "DoctoLib.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "DoctoLib.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DoctoLib.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DoctoLib.Data.dll": {}
+        }
       }
     }
   },
@@ -8113,10 +8136,22 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "DoctoLib.Core/1.0.0": {
+      "type": "project",
+      "path": "../DoctoLib.Core/DoctoLib.Core.csproj",
+      "msbuildProject": "../DoctoLib.Core/DoctoLib.Core.csproj"
+    },
+    "DoctoLib.Data/1.0.0": {
+      "type": "project",
+      "path": "../DoctoLib.Data/DoctoLib.Data.csproj",
+      "msbuildProject": "../DoctoLib.Data/DoctoLib.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
+      "DoctoLib.Core >= 1.0.0",
+      "DoctoLib.Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 3.0.0",
       "Microsoft.Extensions.Logging.Debug >= 3.0.0",
@@ -8148,7 +8183,14 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\outmane\\source\\repos\\DoctoLib\\DoctoLib.Core\\DoctoLib.Core.csproj": {
+              "projectPath": "C:\\Users\\outmane\\source\\repos\\DoctoLib\\DoctoLib.Core\\DoctoLib.Core.csproj"
+            },
+            "C:\\Users\\outmane\\source\\repos\\DoctoLib\\DoctoLib.Data\\DoctoLib.Data.csproj": {
+              "projectPath": "C:\\Users\\outmane\\source\\repos\\DoctoLib\\DoctoLib.Data\\DoctoLib.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

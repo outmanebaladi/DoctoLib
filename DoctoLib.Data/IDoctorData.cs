@@ -5,7 +5,7 @@ using DoctoLib.Core;
 
 namespace DoctoLib.Data
 {
-	interface IDoctorData
+	public interface IDoctorData
 	{
 		IEnumerable<Doctor> GetAll();
 	}

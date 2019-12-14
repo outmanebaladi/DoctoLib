@@ -6,3 +6,14 @@
 
 <h1>@Model.Message</h1>
 
+<table class="table">
+	@foreach(var doctor in Model.Doctors)
+	{
+		<tr>
+			<td>@doctor.Name</td>
+			<td>@doctor.Location</td>
+			<td>@doctor.Type</td>
+		</tr>
+	}
+</table>
+

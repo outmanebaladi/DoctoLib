@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "DoctoLib.Core/1.0.0": {
+        "runtime": {
+          "DoctoLib.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DoctoLib.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

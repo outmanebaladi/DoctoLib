@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DoctoLib.Data
 {
-	class InMemoryDoctorData : IDoctorData
+	public class InMemoryDoctorData : IDoctorData
 	{
 		private readonly List<Doctor> doctors;
 		public InMemoryDoctorData()

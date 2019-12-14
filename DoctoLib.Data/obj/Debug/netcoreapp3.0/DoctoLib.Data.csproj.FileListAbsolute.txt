@@ -1,0 +1,11 @@
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\bin\Debug\netcoreapp3.0\DoctoLib.Data.deps.json
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\bin\Debug\netcoreapp3.0\DoctoLib.Data.dll
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\bin\Debug\netcoreapp3.0\DoctoLib.Data.pdb
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\bin\Debug\netcoreapp3.0\DoctoLib.Core.dll
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\bin\Debug\netcoreapp3.0\DoctoLib.Core.pdb
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\obj\Debug\netcoreapp3.0\DoctoLib.Data.csprojAssemblyReference.cache
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\obj\Debug\netcoreapp3.0\DoctoLib.Data.AssemblyInfoInputs.cache
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\obj\Debug\netcoreapp3.0\DoctoLib.Data.AssemblyInfo.cs
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\obj\Debug\netcoreapp3.0\DoctoLib.Data.csproj.CopyComplete
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\obj\Debug\netcoreapp3.0\DoctoLib.Data.dll
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\obj\Debug\netcoreapp3.0\DoctoLib.Data.pdb
