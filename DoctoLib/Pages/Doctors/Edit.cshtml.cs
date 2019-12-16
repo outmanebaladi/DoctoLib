@@ -23,14 +23,22 @@ namespace DoctoLib.Pages.Doctors
 			this.doctorData = doctorData;
 			this.htmlHelper = htmlHelper;
 		}
-		public IActionResult OnGet(int doctorId)
+		public IActionResult OnGet(int? doctorId)
 		{
 			Types = htmlHelper.GetEnumSelectList<DoctorType>();
-			Doctor = doctorData.GetById(doctorId);
-			if(Doctor == null)
+			if (doctorId.HasValue)
 			{
-				return RedirectToPage("./NotFound");
+				Doctor = doctorData.GetById(doctorId.Value);
+				if (Doctor == null)
+				{
+					return RedirectToPage("./NotFound");
+				}
 			}
+			else
+			{
+				Doctor = new Doctor();
+			}
+			
 			return Page();
 		}
 
@@ -41,8 +49,16 @@ namespace DoctoLib.Pages.Doctors
 				Types = htmlHelper.GetEnumSelectList<DoctorType>();
 				return Page();
 			}
-			doctorData.Update(Doctor);
+			if(Doctor.Id > 0)
+			{
+				doctorData.Update(Doctor);
+			}
+			else
+			{
+				doctorData.Add(Doctor);
+			}
 			doctorData.Commit();
+			TempData["Message"] = "Doctor Saved";
 			return RedirectToPage("./Detail", new { doctorId = Doctor.Id });
 		}
 

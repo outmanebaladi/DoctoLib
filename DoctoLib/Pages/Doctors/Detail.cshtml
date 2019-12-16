@@ -15,4 +15,9 @@
 	Type: @Model.Doctor.Type
 </div>
 
+@if (Model.Message != null)
+{
+	<div class="alert alert-info">@Model.Message</div>
+}
+
 <a asp-page="./List" class="btn btn-primary">All Restaurants</a>

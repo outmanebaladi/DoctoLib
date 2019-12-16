@@ -42,9 +42,26 @@ namespace DoctoLib.Data
 			return doctor;
 		}
 
+		public Doctor Add(Doctor newDoctor)
+		{
+			newDoctor.Id = doctors.Max(d => d.Id) + 1;
+			doctors.Add(newDoctor);
+			return newDoctor;
+		}
+
 		public int Commit()
 		{
 			return 0;
+		}
+
+		public Doctor Delete(int id)
+		{
+			var doctor = doctors.FirstOrDefault(d => d.Id == id);
+			if(doctor != null)
+			{
+				doctors.Remove(doctor);
+			}
+			return doctor;
 		}
 	}
 }

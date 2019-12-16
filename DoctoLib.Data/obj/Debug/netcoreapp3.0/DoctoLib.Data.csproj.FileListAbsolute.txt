@@ -9,3 +9,5 @@ C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\obj\Debug\netcoreapp3.0\Doc
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\obj\Debug\netcoreapp3.0\DoctoLib.Data.csproj.CopyComplete
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\obj\Debug\netcoreapp3.0\DoctoLib.Data.dll
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\obj\Debug\netcoreapp3.0\DoctoLib.Data.pdb
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\bin\Debug\netcoreapp3.0\DoctoLib.Data.runtimeconfig.json
+C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Data\bin\Debug\netcoreapp3.0\DoctoLib.Data.runtimeconfig.dev.json

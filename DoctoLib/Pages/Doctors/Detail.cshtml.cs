@@ -14,6 +14,8 @@ namespace DoctoLib.Pages.Doctors
 		private readonly IDoctorData doctorData;
 
 		public Doctor Doctor { get; set; } 
+		[TempData]
+		public string Message { get; set; }
 		public DetailModel(IDoctorData doctorData)
 		{
 			this.doctorData = doctorData;
