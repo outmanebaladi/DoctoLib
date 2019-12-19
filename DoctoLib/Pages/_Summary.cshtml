@@ -1,0 +1,24 @@
+﻿@using DoctoLib.Core
+@model Doctor
+
+<div class="card">
+	<div class="card-header">
+		<h3>@Model.Name</h3>
+	</div>
+	<div class="card-body">
+		<span>Location: @Model.Location</span>
+		<span>Type: @Model.Type</span>
+	</div>
+	<div class="card-footer">
+		<a class="btn btn-lg" asp-page="./Detail" asp-route-doctorId="@Model.Id">
+			<i class="fa fa-search-plus"></i>
+		</a>
+		<a class="btn btn-lg" asp-page="./Edit" asp-route-doctorId="@Model.Id">
+			<i class="fa fa-pencil"></i>
+		</a>
+		<a class="btn btn-lg" asp-page="./Delete" asp-route-doctorId="@Model.Id">
+			<i class="fa fa-trash"></i>
+		</a>
+	</div>
+
+</div>

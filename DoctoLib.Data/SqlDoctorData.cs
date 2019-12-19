@@ -38,6 +38,11 @@ namespace DoctoLib.Data
 			return db.Doctors.Find(id);
 		}
 
+		public int GetCountOfDoctors()
+		{
+			return db.Doctors.Count();
+		}
+
 		public IEnumerable<Doctor> GetDoctorsByName(string name)
 		{
 			return from d in db.Doctors

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctoLib", "DoctoLib\DoctoLib.csproj", "{7242A66E-D61D-433A-A624-9C7A8E6440F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoctoLib", "DoctoLib\DoctoLib.csproj", "{7242A66E-D61D-433A-A624-9C7A8E6440F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctoLib.Core", "DoctoLib.Core\DoctoLib.Core.csproj", "{E66088A0-1251-4E87-8660-C6C424B3B6D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoctoLib.Core", "DoctoLib.Core\DoctoLib.Core.csproj", "{E66088A0-1251-4E87-8660-C6C424B3B6D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctoLib.Data", "DoctoLib.Data\DoctoLib.Data.csproj", "{842F18ED-9EFD-4EDA-8BA9-D5F65EF2B84D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DoctoLib.Data", "DoctoLib.Data\DoctoLib.Data.csproj", "{842F18ED-9EFD-4EDA-8BA9-D5F65EF2B84D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -12,6 +12,7 @@ namespace DoctoLib.Data
 		Doctor Update(Doctor updatedDoctor);
 		Doctor Add(Doctor newDoctor);
 		Doctor Delete(int id);
+		int GetCountOfDoctors();
 		int Commit();
 	}
 }

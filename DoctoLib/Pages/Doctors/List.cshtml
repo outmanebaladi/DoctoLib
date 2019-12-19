@@ -1,7 +1,7 @@
 ﻿@page
 @model DoctoLib.Pages.Doctors.ListModel
 @{
-    ViewData["Title"] = "List";
+    ViewData["Title"] = "Doctors";
 }
 
 <h1>@Model.Message</h1>
@@ -18,27 +18,16 @@
 	</div>
 </form>
 
-<table class="table">
-	@foreach(var doctor in Model.Doctors)
-	{
-	<tr>
-		<td>@doctor.Name</td>
-		<td>@doctor.Location</td>
-		<td>@doctor.Type</td>
-		<td>
-			<a class="btn btn-lg" asp-page="./Detail" asp-route-doctorId="@doctor.Id">
-				<i class="fa fa-search-plus"></i>
-			</a>
-		</td>
-		<td>
-			<a class="btn btn-lg" asp-page="./Edit" asp-route-doctorId="@doctor.Id">
-				<i class="fa fa-pencil"></i>
-			</a>
-		</td>
 
-	</tr>
-	}
-</table>
+@foreach(var doctor in Model.Doctors)
+{
+	<partial name="_Summary" model="doctor"/>	
+}
+
+
+@section author{ 
+	<h6>Outmane Baladi</h6>
+}
 
 <a class="btn btn-primary" asp-page="./Edit">New Doctor</a>
 

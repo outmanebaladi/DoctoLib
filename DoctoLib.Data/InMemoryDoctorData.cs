@@ -63,5 +63,10 @@ namespace DoctoLib.Data
 			}
 			return doctor;
 		}
+
+		public int GetCountOfDoctors()
+		{
+			return doctors.Count;
+		}
 	}
 }

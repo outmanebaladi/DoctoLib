@@ -5,4 +5,3 @@ C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Core\obj\Debug\netcoreapp3.0\Doc
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Core\obj\Debug\netcoreapp3.0\DoctoLib.Core.AssemblyInfo.cs
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Core\obj\Debug\netcoreapp3.0\DoctoLib.Core.dll
 C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Core\obj\Debug\netcoreapp3.0\DoctoLib.Core.pdb
-C:\Users\outmane\source\repos\DoctoLib\DoctoLib.Core\obj\Debug\netcoreapp3.0\DoctoLib.Core.csprojAssemblyReference.cache

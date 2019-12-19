@@ -40,6 +40,8 @@
     </div>
 
     <footer class="border-top footer text-muted">
+		<vc:doctor-count></vc:doctor-count>
+		@RenderSection("author", required: false);
         <div class="container">
             &copy; 2019 - DoctoLib - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
