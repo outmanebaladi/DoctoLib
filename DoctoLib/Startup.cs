@@ -26,6 +26,7 @@ namespace DoctoLib
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddRazorPages();
+            services.AddControllers();
 			services.AddScoped<IDoctorData, SqlDoctorData>();
 			services.AddDbContextPool<DoctoLibDbContext>(options =>
 				 options.UseSqlServer(Configuration.GetConnectionString("DoctoLib"))
@@ -48,6 +49,7 @@ namespace DoctoLib
 
 			app.UseHttpsRedirection();
 			app.UseStaticFiles();
+            app.UseNodeModules();
 
 			app.UseRouting();
 
@@ -56,6 +58,7 @@ namespace DoctoLib
 			app.UseEndpoints(endpoints =>
 			{
 				endpoints.MapRazorPages();
+                endpoints.MapControllers();
 			});
 		}
 	}

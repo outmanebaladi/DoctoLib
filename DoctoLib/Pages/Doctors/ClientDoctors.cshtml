@@ -1,0 +1,43 @@
+﻿@page
+@model DoctoLib.Pages.Doctors.ClientDoctorsModel
+@{
+    ViewData["Title"] = "ClientDoctors";
+}
+
+<h1>Client Doctors</h1>
+
+<table class="table" id="doctors">
+
+</table>
+
+@section Scripts {
+
+    <environment include="Development">
+        <script src="~\node_modules\datatables.net\js\jquery.dataTables.js"></script>
+        <script src="~\node_modules\datatables.net-dt\js\dataTables.dataTables.js"></script>
+        <link href="~\node_modules\datatables.net-dt\css\jquery.dataTables.css" rel="stylesheet" />
+    </environment>
+
+    <environment exclude="Development">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    </environment>
+
+    <script>
+        $(function () {
+            $.ajax("/api/doctors/",
+                { method: "get" })
+                .then(function (response) {
+                    $("#doctors").dataTable({
+                        data: response,
+                        columns: [
+                            { "data": "name" },
+                            { "data": "location" },
+                            { "data": "type" }, 
+                        ]
+                    });
+                });
+        });
+    </script>
+}
+
